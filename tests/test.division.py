@@ -18,6 +18,14 @@ class TestDivision(unittest.TestCase):
                          "Residuo: 4"
         valor_actual = evaluar(14, 5)
         self.assertEqual(valor_esperado, valor_actual)
+
+class TestDivision2(unittest.TestCase):
+    def testDivisionExacta(self):
+        valor_esperado = "La división es exacta. \n" \
+                         "Cociente: 2\n" \
+                         "Residuo: 4"
+        valor_actual = evaluar(10, 5)
+        self.assertEqual(valor_esperado, valor_actual)        
     
     # TODO: Agrega tus otros casos de prueba aquí
     

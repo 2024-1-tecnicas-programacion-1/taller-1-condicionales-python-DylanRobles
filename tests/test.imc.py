@@ -16,6 +16,21 @@ class TestIMC(unittest.TestCase):
         valor_esperado = "bajo"
         valor_actual = evaluar(50, 1.8,   20)
         self.assertEqual(valor_esperado, valor_actual)
+class TestIMC(unittest.TestCase):
+    def testMedio(self):
+        valor_esperado = "medio"
+        valor_actual = evaluar(70, 1.7,   25)
+        self.assertEqual(valor_esperado, valor_actual)
+class TestIMC(unittest.TestCase):
+    def testMedio(self):
+        valor_esperado = "medio"
+        valor_actual = evaluar(55, 1.75,   45)
+        self.assertEqual(valor_esperado, valor_actual)
+class TestIMC(unittest.TestCase):
+    def testAlto(self):
+        valor_esperado = "alto"
+        valor_actual = evaluar(90, 1.72,   50)
+        self.assertEqual(valor_esperado, valor_actual)
     
     # TODO: Agrega tus otros casos de prueba aquí
     

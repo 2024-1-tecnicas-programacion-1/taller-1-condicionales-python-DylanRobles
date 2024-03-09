@@ -16,6 +16,21 @@ class TestTriangulo(unittest.TestCase):
         valor_esperado = "No es un triángulo válido"
         valor_actual = evaluar(3.9, 6.0, 1.2)
         self.assertEqual(valor_esperado, valor_actual)
+class TestTriangulo(unittest.TestCase):
+    def test_no_es_un_triangulo_valido(self):
+        valor_esperado = "Es un trianngulo equilatero"
+        valor_actual = evaluar(3.0, 3.0, 3.0)
+        self.assertEqual(valor_esperado, valor_actual)
+class TestTriangulo(unittest.TestCase):
+    def test_no_es_un_triangulo_valido(self):
+        valor_esperado = "Es un triangulo isoceles"
+        valor_actual = evaluar(4.0, 3.0, 4.0)
+        self.assertEqual(valor_esperado, valor_actual)
+class TestTriangulo(unittest.TestCase):
+    def test_no_es_un_triangulo_valido(self):
+        valor_esperado = "Es un triangulo isoceles"
+        valor_actual = evaluar(3.0, 2.0, 4.0)
+        self.assertEqual(valor_esperado, valor_actual)                
     
     # TODO: Agrega tus otros casos de prueba aquí
     
